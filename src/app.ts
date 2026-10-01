@@ -13,6 +13,10 @@ export function createApp() {
     res.json({ status: "ok", service: "express-ts-api" });
   });
 
+  app.get("/cristianp", (_req, res) => {
+    res.json({ status: "ok", service: "express-ts-api" });
+  });
+
   app.use("/api/postgres", postgresRouter);
   app.use("/api/mongo", mongoRouter);
 

@@ -10,12 +10,10 @@ export function createApp() {
   app.use(express.json());
 
   app.get("/health", (_req, res) => {
-    res.json({ status: "ok", service: "express-ts-api" });
+    res.json({ status: "cristianp ok", service: "express-ts-api" });
   });
 
-  app.get("/cristianp", (_req, res) => {
-    res.json({ status: "ok", service: "express-ts-api" });
-  });
+ 
 
   app.use("/api/postgres", postgresRouter);
   app.use("/api/mongo", mongoRouter);
